@@ -1,8 +1,13 @@
 .header {
-    background-color: #333; /* Color de fondo del header */
+    background-color: black; /* Color de fondo del header */
     padding: 15px; /* Espaciado interno */
     text-align: center; /* Alineación del texto en el centro */
   }
+
+.headerTittle {
+  color: white;
+  margin-bottom: 10px;
+}
   
   .headerMenu {
     list-style: none; /* Elimina los puntos de la lista */
@@ -22,7 +27,7 @@
   .headerMenu a {
     text-decoration: none; /* Elimina la subrayado de los enlaces */
     color: white; /* Color del texto */
-    font-weight: bold; /* Peso de la fuente */
+    font-weight: 400; /* Peso de la fuente */
     font-size: 16px; /* Tamaño de la fuente */
     transition: color 0.3s; /* Transición suave para el cambio de color al pasar el ratón */
   }

@@ -4,6 +4,7 @@ import "../styles/header.css"
 function Header() {
     return (
         <div className="header">
+            <h1 className="headerTittle">Barbercite</h1>
             <ul className='headerMenu'>
                 <li>
                     <Link to="/">Home</Link>
