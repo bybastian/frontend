@@ -40,7 +40,7 @@ const MisCitas = () => {
 
         <div className="misCitas">
           {citas.map((cita) => (
-            <CardCitas key={cita.id} cita={cita} />
+            <CardCitas key={cita.id} cita={cita} fetchData={fetchData} />
           ))}
         </div>
       </div>
