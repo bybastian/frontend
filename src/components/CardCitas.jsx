@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./cardCitas.css";
 
-const CardCitas = ({ cita, onDelete, fetchData  }) => {
+const CardCitas = ({ cita, onDelete, fetchData }) => {
   const { id, nombre, fecha, hora } = cita;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -40,15 +40,24 @@ const CardCitas = ({ cita, onDelete, fetchData  }) => {
       </div>
 
       {isModalOpen && (
+
         <div className="cardCitasModal">
-          <div>
-            <h2>Cita #{id}</h2>
+          <div className="cardCitasModalContenedor">
             <p>Nombre: {nombre}</p>
             <p>Fecha: {fecha}</p>
             <p>Hora: {hora}</p>
           </div>
-          <button onClick={handleDelete}>Eliminar Cita</button>
-          <button onClick={closeModal}>Cerrar</button>
+          <div className="cardCitasModalButon">
+            <button  className="cardCitasModalButonDelete" onClick={handleDelete}>Eliminar Cita</button>
+            <button onClick={closeModal}>Cerrar</button>
+          </div>
+        </div>
+
+      )}
+
+      {isModalOpen && (
+        <div className="cardBlur">
+
         </div>
       )}
 

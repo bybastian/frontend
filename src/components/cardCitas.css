@@ -35,6 +35,18 @@
   
 }
 
+.cardBlur{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  min-height: 100%;
+  min-width: 100%;
+  background-color: #ededed;
+  opacity: 0.5;
+}
+
 .cardCitasModal{
   position: fixed;
   top: 50%;
@@ -69,4 +81,29 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.8); /* Ajusta el color y la opacidad según tus preferencias */
   z-index: 9; /* Asegúrate de que la capa esté por debajo del modal */
+}
+
+.cardCitasModalContenedor{
+  margin-bottom: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardCitasModalButon{
+  display: flex;
+  flex-direction: column;
+}
+
+.cardCitasModalButon > button {
+  border-radius: 10px;
+}
+
+.cardCitasModalButonDelete{
+  margin-bottom: 15px;
+}
+
+.cardCitasModalContenedor > p {
+  margin-bottom: 8px;
 }
